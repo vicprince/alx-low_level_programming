@@ -12,10 +12,10 @@ int main(void)
 	long long intlonglong;
 	float sysfloat;
 
-	printf("Size of a char: %lu byte(s), sizeof(syschar)\n");
-	printf("Size of an int: %lu byte(s), sizeof(sysint)\n");
-	printf("Size of a long int: %lu byte(s), sizeof(intlong)\n");
-	printf("Size of a long long int: %lu byte(s), sizeof(intlonglong)\n");
-	printf("Size of a float: %lu byte(s), sizeof(sysfloat)\n");
+	printf("Size of a char: %lu byte(s)\n", sizeof(syschar));
+	printf("Size of an int: %lu byte(s)\n", sizeof(sysint));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(intlong));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(intlonglong));
+	printf("Size of a float: %lu byte(s)\n", sizeof(sysfloat));
 	return (0);
 }
