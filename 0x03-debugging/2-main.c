@@ -2,8 +2,10 @@
 #include "main.h"
 
 /**
-* main - prints the largest of 3 integers
-* Return: 0
+* main - Entry point
+* Description: prints the largest of 3 integers
+*
+* Return: Always 0 (Success)
 */
 
 int main(void)
