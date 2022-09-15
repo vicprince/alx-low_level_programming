@@ -2,9 +2,8 @@
 /**
  * print_times_table - prints the times table
  *
- * @n: integer
- *
  * Description: prints the times table
+ * @n: integer
  *
  * Return: void
  */
