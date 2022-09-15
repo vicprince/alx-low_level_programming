@@ -2,12 +2,9 @@
 /**
  * add - adds two integers
  *
- * @na: integer a
- *
- * @nb: integer b
- *
  * Description: give two integers, returns sum
- *
+ * @a: integer 1
+ * @b: integer 2
  * Return: sum of integers
  */
 int add(int a, int b)
