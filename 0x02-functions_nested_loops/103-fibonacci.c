@@ -3,11 +3,6 @@
 /**
  * main - main function
  *
- * @counter: local variable
- * @x: first integer
- * @y: second integer
- * @z: third integer
- *
  * Return: void
  */
 
