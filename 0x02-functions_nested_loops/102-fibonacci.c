@@ -2,10 +2,9 @@
 /**
  * main - Entry point
  *
- * @counter: local variable
- * @x: first integer
- * @y: second integer
- * @z: third integer
+ * Description: finds and prints the first 98 Fibonacci numbers
+ *
+ * @counter,@x,@y,@z: local variable
  *
  * Return: return 0 Always (Success)
  */
