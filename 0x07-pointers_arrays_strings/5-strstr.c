@@ -1,8 +1,11 @@
 #include "main.h"
 /**
+ * _strstr - locate a substring
  *
+ * @s: string to go through
+ * @accept: accepted bytes
  *
- *
+ * Return: returns usigned values
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -17,14 +20,14 @@ char *_strstr(char *haystack, char *needle)
 		{
 				for (j = 0; needle[i] != '\0'; j++)
 				{
-					if (haystack[i + j] != needle [j]
+					if (haystack[i + j] != needle [j])
 					break;
 				}
 				if (needle[j] == '\0')
 					return (haystack + i);
 		}
 	}
-	return ('\0')
+	return ('\0');
 }
 
 
