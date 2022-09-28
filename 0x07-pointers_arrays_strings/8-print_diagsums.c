@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
+ * print_diagsums - sum of two diagonals of a matrix
+ * @a: array to use
+ * @size: size of diagonal
  */
 void print_diagsums(int *a, int size)
 {
@@ -12,8 +12,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		diagO += a[(i * size) + i];
-		diagT += a[(size - 1) + ((size - 1) * i)];
+		diagA += a[(i * size) + i];
+		diagB += a[(size - 1) + ((size - 1) * i)];
 	}
 	printf("%d, %d\n", diagA, diagB);
 }
