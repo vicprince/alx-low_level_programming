@@ -18,7 +18,7 @@ int main(void)
 	printf("%d\n", r);
 	r = _pow_recursion(5, -2);
 	printf("%d\n", r);
-	r = _pow_recursions(-5, 3);
+	r = _pow_recursion(-5, 3);
 	printf("%d\n", r);
 	return (0);
 }
