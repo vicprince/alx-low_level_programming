@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "main.h"
 /**
  * alloc_grid - function return pointer to 2-d array
  * @width: integer
@@ -13,12 +13,12 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	grid = malloc(sizeof(char) * height);
+	grid = malloc(sizeof(int *) * height);
 	if (grid == NULL)
 		return (NULL);
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = malloc(sizeof(char) * width);
+		grid[i] = malloc(sizeof(int) * width);
 		if (grid[i] == NULL)
 		{
 			while (i >= 0)
