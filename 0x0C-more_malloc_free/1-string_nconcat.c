@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * srting_nconcat - a function that concats two strings
+ * string_nconcat - a function that concats two strings
  * @n: unsignrd integer
  * @s1: string 1
  * @s2: string 2
