@@ -1,6 +1,7 @@
+#include "3-calc.h"
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
 
 /**
  * main - performs simple operations
@@ -11,23 +12,35 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, k;
-	int (*f)(int, int);
+	int num1, num2;
+	char *operator;
 
+	/* Error if arguments are not 4 with the executable */
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	i = atoi(argv[1]);
-	j = atoi(argv[3]);
-	f = get_op_func(argv[2]);
-	if (f == NULL)
+
+	num1 = atoi(argv[1]); /*if argument is string convert to number*/
+	num2 = atoi(argv[3]); /* as stated above */
+	operator = argv[2];
+
+	/* Error if operator is not null or a 2d array '\*' */
+	if (get_op_func(operator) == NULL || operator[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	k = f(i, j);
-	printf("%d\n", k);
+
+	/* Error if user tries to divide / (47) or % (37) by 0*/
+	if ((*operator == 47 || *operator == 37) && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	printf("%d\n", get_op_func(operator)(num1, num2));
+
 	return (0);
 }
